@@ -1,0 +1,254 @@
+body{
+  /* background: rgb(222, 236, 240); */
+  /* background: rgb(190, 221, 229); */
+  margin: 0px;
+  background: black;
+}
+
+.circle{
+  width: 120px;
+  height: 120px;
+  /* background-color: rgb(222, 236, 240); */
+    /* background-color: rgb(0, 0, 0); */
+  /* margin-top:50px; */
+  /* transform: rotate(45deg); */
+  /* display: flex; */
+  /* border-radius: 50%; */
+  /* border: 5px solid rgb(232, 240, 222); */
+  
+  /* position:relative;   */
+  position: fixed;
+  /* position: absolute; */
+  /* border: 1px solid rgb(141, 141, 141); */
+  /* margin-left: 5px;
+  margin-right: 5px; */
+
+  /* box-shadow: 0px 0px 400px -42px rgba(0, 0, 0, 0.75) inset; */
+
+}
+
+.circle-container{
+  /* display:flex; */
+  /* display: flex; */
+  /* height: 90vw;
+  width: 90vh; */
+  /* margin: 5vmin;*/
+  width: 80vw;
+  height: 90vh;
+  /* width: 500px;
+  height: 500px; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* border: 1px solid rgb(78, 78, 78); */
+/* background-color: rgb(51, 51, 51); */
+  /* position: relative; */
+  position:fixed;    
+  top: 50vh;
+  left: 50vw;
+  transform:translate(-50%, -50%);
+
+  /* margin-left: 50%;
+  margin-right: 50%;
+  transform: translate (-50%); */
+
+
+}
+
+#variable-x{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 10vh;
+  left: 50vw;
+  /* position: absolute; */
+}
+#variable-y{
+  color: white;
+  font-size: 20px;
+  /* text-align: center; */
+  font-family: 'Roboto Mono', monospace;
+  /* margin-top: 10vh; */
+  margin-left: 5%;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  margin-top: 15%;
+}
+
+/* .container: 10px; */
+
+#ABC{
+  top: 43%;
+  left: 0%;
+}
+
+#Rock {
+  top: 19%;
+  left: 36%;
+}
+
+#Dont {
+  top: 12%;
+  left: 36%;
+}
+
+#Human {
+  top: 37%;
+  left: 48%;
+}
+
+#Thriller {
+  top: 23%;
+  left: 48%;
+}
+
+#Wanna {
+  top: 16%;
+  left: 48%;
+}
+
+#Beat {
+  top: 22%;
+  left: 48%;
+}
+
+#Billie {
+  top: 7%;
+  left: 48%;
+}
+
+#Smooth {
+  top: 15%;
+  left: 68%;
+}
+
+#The {
+  top: 12%;
+  left: 68%;
+}
+
+#Man {
+  top: 21%;
+  left: 68%;
+}
+
+#Remember {
+  top: 21%;
+  left: 84%;
+}
+
+#Heal {
+  top: 45%;
+  left: 84%;
+}
+
+#Black{
+  top: 48%;
+  left: 84%;
+
+}
+
+#They {
+  top: 14%;
+  left: 94%;
+}
+
+
+.lines{
+  width: 3%;
+  height: 100%;
+  /* border-radius: 50%; */
+  /* background-color: purple; */
+  /* opacity: 80%; */
+  /* mix-blend-mode: hue; */
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 90%;
+  /* transform: translate(-50%, -50%) rotate(45deg); */
+  
+/*   i added this in after class to make it pretty! */
+/*   play with other values of mix-blend-mode for some more fun */
+  /* mix-blend-mode: multiply; */
+  /* animation: rotate360 5s linear infinite; */
+  transformOrigin: center center;
+  /* box-shadow: 0px 0px 30px 5px rgba(255, 241, 202, pVal); */
+  /* background-color: white; */
+  z-index: 5;
+  /* border: 5px;
+  border-style: dotted; */
+}
+
+/* .triangle {
+  width: 0;
+  height: 0;
+  border: 150px solid transparent;
+  border-top: 0;
+  border-bottom: 300px solid red;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 3% 100% 3%;
+  border-color: transparent transparent #007bff transparent;
+} */
+
+/* below doesnt work */
+@keyframes rotate360 {
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes grow {
+  0% {
+    height: 15%;
+  }
+  50% {
+    height: ${(Math.random() * eVal / 2) + '%'};
+  }
+  100% {
+    height: ${(Math.random() * eVal) + '%'};
+  }
+}
+
+  /* #column-a{
+    font-size: 300px;
+    color: black;
+  } */
+
+
+#song-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+#song-name{
+  text-align: center;
+  font-size: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  display: none;
+}
+  
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: #2196F3;
+  /* padding: 10px; */
+  /* margin-left: 50px;
+  margin-right: 50px; */
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  
+}

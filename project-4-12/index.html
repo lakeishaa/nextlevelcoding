@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Song Visualization</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./css/styles-3.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  </head>  
+  <body>   
+
+    
+  <div class="header">
+    <div id="header-text">
+      <p id="header-text-verified">Verified Artist</p>
+      <h1>Michael Jackson</h1>
+      <p id="header-text-listener">35,769,851 monthly listeners</p>
+    </div>
+  </div>
+
+  <div id="popular">
+    <div class="row">
+      <div id="play-row">
+        <div class="play-row-item" id="play-button">
+          <img id="spotifyplaybutton" src="./images/spotifyplaybutton.png" alt="">
+        </div>
+        <div class="play-row-item">
+          <div id="follow">FOLLOW</div>
+        </div>
+        <div class="play-row-item" id="ellipses">
+          <div id="ellipses-dot"></div>
+          <div id="ellipses-dot"></div>
+          <div id="ellipses-dot"></div>
+        </div>
+    </div>
+      <div class="column-1" >
+        <div id="popular-text">POPULAR</div>
+      <div class="grid-container">
+        <div class="grid-item-1" id="popular-track-number">1</div>
+        <div class="grid-item-1">
+          <img id="gifs" src="./images/billiejean.gif" alt="">
+        </div>
+        <div class="grid-item-1"  id="popular-track-title">Billie Jean</div>  
+        <div class="grid-item-1"  id="popular-track-time">4:54</div>
+        <div class="grid-item-2" id="popular-track-number">2</div>
+        <div class="grid-item-2">
+          <img id="gifs" src="./images/beatit.gif" alt="">
+        </div>  
+        <div class="grid-item-2" id="popular-track-title">Beat It</div>
+        <div class="grid-item-2" id="popular-track-time">4:18</div>
+        <div class="grid-item" id="popular-track-number">3</div> 
+        <div class="grid-item">
+          <img id="gifs" src="./images/smoothcriminal.gif" alt="">
+        </div>
+        <div class="grid-item" id="popular-track-title">Smooth Criminal</div>
+        <div class="grid-item" id="popular-track-time">4:17</div>  
+        <div class="grid-item" id="popular-track-number">4</div>
+        <div class="grid-item">
+          <img id="gifs" src="./images/rockwithyou.gif" alt="">
+        </div>
+        <div class="grid-item" id="popular-track-title">Rock With You</div>  
+        <div class="grid-item" id="popular-track-time">3:40</div>
+        <div class="grid-item" id="popular-track-number">5</div>
+        <div class="grid-item">
+          <img id="gifs" src="./images/thriller.gif" alt="">
+        </div>  
+        <div class="grid-item" id="popular-track-title">Thriller</div>  
+        <div class="grid-item" id="popular-track-time">5:57</div> 
+        <div class="grid-item" id="popular-track-number">6</div>
+        <div class="grid-item">
+          <img id="gifs" src="./images/maninthemirror.gif" alt="">
+        </div>
+        <div class="grid-item" id="popular-track-title">Man In The Mirror</div>  
+        <div class="grid-item" id="popular-track-time">5:18</div>
+        
+      </div>
+      </div>
+      <div class="column-2">
+        <div id="column-2-container">
+          <div id="popular-text-2">ARTIST PICK</div>
+          <div id="artist-pick-text">Celebrating the 40th Anniversary of the King of Pop</div>
+          <div>
+            <div id="artist-pick">
+              <img id="artist-pick-2" src="./images/all.gif" alt="">
+              <div id="remaster">Michael Jackson:<br>
+                2022 Remaster Greatest Hits 
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- <p id="header-text-follow">Follow</p> -->
+  
+  </div>
+
+      <div id="discography">
+        <div id="discography-text">DISCOGRAPHY</div>
+
+        <div class="category-container">
+          <div class="category-item">Time</div>
+          <div class="category-item">Dance</div>
+          <div class="category-item">Energy</div>  
+        </div>
+
+        <div class="circle-container">
+          <!-- <div id="column-a"></div> -->
+
+            <!-- <div class="circle">
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+            </div> -->
+            <div class="first-song-container"></div>
+            <div id="song-container">
+              <div class="circle">
+              <div id="song-name">ABC</div>
+              </div>
+              <div id="song-year"><br>1970</div>
+
+            </div>
+            <div id="song-container">
+              <div class="circle">
+                <div id="song-name">Rock With You </div> 
+              </div>
+              <div id="song-year"><br>1979</div>
+            </div>
+            <div id="song-container">
+              <div class="circle">
+                <div id="song-name">Don't Stop 'Til You Ge...</div>
+              </div>
+              <div id="song-year"><br>1979</div>
+            </div>
+            <div id="song-container">
+              <div class="circle">
+                <div id="song-name">Human Nature</div>
+              </div>
+              <div id="song-year"><br>1982</div>
+            </div>
+            <div id="song-container">
+            <div class="circle">
+              <div id="song-name">Thriller</div>
+            </div>
+            <div id="song-year"><br>1982</div>
+            </div>
+            <div id="song-container">
+              <div class="circle">
+                <div id="song-name">Wanna Be Startin' So...</div>
+              </div>
+              <div id="song-year"><br>1982</div>
+            </div>
+            <div id="song-container">
+              <div class="circle">
+                <div id="song-name">Beat It</div>
+              </div>
+              <div id="song-year"><br>1982</div>
+            </div>
+            <div id="song-container">
+              <div class="circle">
+                <div id="song-name">Billie Jean</div>
+              </div>
+              <div id="song-year"><br>1982</div>
+            </div>
+            <div id="song-container">
+              <div class="circle">
+                <div id="song-name">Smooth Criminal</div>
+              </div>
+              <div id="song-year"><br>1987</div>
+            </div>
+            <div id="song-container">
+              <div class="circle">
+                <div id="song-name">The Way You Make M...</div>
+              </div>
+              <div id="song-year"><br>1987</div>
+            </div>
+            <div id="song-container">
+              <div class="circle">
+                <div id="song-name">Man In The Mirror</div>
+              </div>
+              <div id="song-year"><br>1988</div>
+            </div>
+            <div id="song-container">
+              <div class="circle">
+                <div id="song-name">Remember The Time</div>
+              </div>
+              <div id="song-year"><br>1991</div>
+            </div>
+            <div id="song-container">
+              <div class="circle">
+                <div id="song-name">Heal The World</div>
+              </div>
+              <div id="song-year"><br>1991</div>
+            </div>
+            <div id="song-container">
+              <div class="circle">
+                <div id="song-name">Black or White</div>
+              </div>
+              <div id="song-year"><br>1991</div>
+            </div>
+            <div id="song-container">
+              <div class="circle">
+                <div id="song-name">They Don't Care About</div>
+              </div>
+              <div id="song-year"><br>1995</div>
+            </div>
+        </div>
+
+        <div id="visualized">
+          <a href="./project-4-10-macro/index.html">See it visualized here...</a>
+        </div>
+
+      </div>
+
+   <script src="./js/main-4.js"></script>
+  </body>
+</html>
