@@ -225,7 +225,7 @@ h1{
   top: 720px;
   
 
-  background: #1A1A1A;
+  background: #ff0000;
 }
 
 #header-text-follow{
@@ -502,7 +502,7 @@ h1{
   margin-right: 30px;
   margin-top: 80px;
   height: 37px;
-  color: rgb(255, 0, 0);
+  /* color: rgb(255, 0, 0); */
 }
 
 a:visited {
