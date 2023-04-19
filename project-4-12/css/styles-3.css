@@ -488,11 +488,12 @@ h1{
   margin-right: 30px;
   height: 37px;
   color: white;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .category-item:hover{
   /* color: #1A1A1A; */
+  
   background-color: rgb(0, 0, 0);
   color: white;
 }
