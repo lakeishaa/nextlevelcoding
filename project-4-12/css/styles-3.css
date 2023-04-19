@@ -482,7 +482,7 @@ h1{
 .category-container{
   display: grid;
   grid-template-columns: 180px 180px 180px 180px 180px;
-  margin-left: 60px;
+  margin-left: 68px;
   margin-top: 30px;
 }
 
