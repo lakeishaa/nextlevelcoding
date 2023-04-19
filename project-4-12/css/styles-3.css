@@ -436,8 +436,9 @@ h1{
 
 #remaster{
   font-weight: 600;
-  font-size: 25px;
-  line-height: 37px;
+  font-size: 23px;
+  line-height: 30px;
+  margin-top: 8px;
   /* margin-left:60px; */
 }
 
