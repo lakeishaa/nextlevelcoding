@@ -10,15 +10,8 @@ fetch(opensheet_uri)
         return response.json();
     })
     .then(function (data) {
-        console.log(data);
+        // console.log(data);
 				//do something with the data here
-
-            // Determine the highest and lowest values of dVal
-            let maxDVal = Math.max(...data.map((row) => row['Dance']));
-            let minDVal = Math.min(...data.map((row) => row['Dance']));
-
-            // Calculate the range between the highest and lowest values
-            let range = maxDVal - minDVal;
 
 
             // Loop through each item in the data array
@@ -31,6 +24,7 @@ fetch(opensheet_uri)
 
             // Get the value of the 'Dance' column from the current row
             let dVal = data[i]['Dance'];
+            let dValSpeed = data[i]['Danceability (%)'];
             let eVal = data[i]['Energy'];
             let bVal = data[i]['BPM'];
             let pVal = data[i] ['Positiveness'];
@@ -43,16 +37,40 @@ fetch(opensheet_uri)
             
             // Select the circle element with the index 'i'
             let circle = circles[i];
+            
+            // MAPPING lines starts here
+            let danceMinVal = 5.2;  // minimum value of the original range
+            let danceMaxVal = 9.3;  // maximum value of the original range
+            let danceNewMinVal = 5;  // minimum value of the new range
+            let danceNewMaxVal = 15;  // maximum value of the new range
+
+            let danceMappedVal = ((dVal - danceMinVal) * (danceNewMaxVal - danceNewMinVal)) / (danceMaxVal - danceMinVal) + danceNewMinVal;
+
+            // let danceSpeedMax = 93;
+            // let danceSpeedMin = 52;
+
+            // let RandomSpeed = Math.floor(Math.random() * (danceSpeedMax - danceSpeedMin) + danceSpeedMin)
+
+            // MAPPING dance speed starts here
+            let danceSpeedMin = 0;  // minimum value of the original range
+            let danceSpeedMax = 100;  // maximum value of the original range
+            let danceNewSpeedMin = 0;  // minimum value of the new range
+            let danceNewSpeedMax = 2000;  // maximum value of the new range
+
+            let danceSpeedMappedVal = ((dValSpeed - danceSpeedMin) * (danceNewSpeedMax - danceNewSpeedMin)) / (danceSpeedMax - danceSpeedMin) + danceNewSpeedMin;
 
 
             // Add 'dVal' number of liness to the current circle element
-            for (let j=0; j<dVal; j++){
+            for (let j=0; j<danceMappedVal; j++){
                 let lines = document.createElement("DIV");
                 lines.classList.add("lines");
+                setInterval(()=>{
+                    lines.style.transform = "translate(-50%, -50%) rotate(" + Math.random()*360 + "deg)";
+                }, danceSpeedMappedVal)
                 // lines.style.transform = "translate(-50%, -50%) rotate(" + Math.random()*360 + "deg)";
                 lines.style.transformOrigin = "center center";
 
-                lines.style.transform = "translate(-50%, -50%) rotate(" + Math.floor(Math.random() * 360) + "deg)";
+                // lines.style.transform = "translate(-50%, -50%) rotate(" + Math.floor(Math.random() * 360) + "deg)";
                 // lines.style.transform = "translate(-50%, -50%) rotate(" + Math.random()*360 + "deg)";               
 
                 // MAPPING height starts here
