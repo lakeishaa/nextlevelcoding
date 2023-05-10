@@ -219,6 +219,7 @@ margin-bottom: 200px;
 
 img{
     background-color: white;
+    border: 6px solid black;
 }
 
 /* #gallery.visible{
