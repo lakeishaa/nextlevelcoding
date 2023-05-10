@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <h1>Create your portrait using these emojis</h1>
+
+        <!-- <div id="cursor"></div> -->
+        <div id=container>
+            <div id="emoji">
+                <!-- &#128717; &#128690; &#128661; &#128647; &#128509; &#128444; &#128378; &#128218; &#128202; &#128184; &#128131; &#128096; &#128000; &#127961; &#127928; &#127917; &#127916; &#127912; &#127908; &#127902; &#127897; &#127871; &#127870; &#127867; &#127860; &#127829; &#127752; &#127747; &#127936; -->
+                <!-- &#128717; &#128690; &#128661; &#128647; &#128509; &#128378; &#128218; &#128202; &#128184; &#128131; &#128096; &#128000; &#127928; &#127917; &#127916; &#127912; &#127897; &#127870; &#127867; &#127829; &#127752; &#127747; &#127936; -->
+                <button class="emoji" id="emoji-1">&#128509;</button>
+                <button class="emoji" id="emoji-2">&#128690;</button>
+                <button class="emoji" id="emoji-3">&#128661;</button>
+                <button class="emoji" id="emoji-4">&#128647;</button>
+                <button class="emoji" id="emoji-5">&#128717;</button>
+                <button class="emoji" id="emoji-6">&#127789;</button>
+                <button class="emoji" id="emoji-7">&#128218;</button>
+                <button class="emoji" id="emoji-8">&#128200;</button>
+                <button class="emoji" id="emoji-9">&#128184;</button>
+                <button class="emoji" id="emoji-10">&#128131;</button>
+                <button class="emoji" id="emoji-11">&#128096;</button>
+                <button class="emoji" id="emoji-12">&#128000;</button>
+                <button class="emoji" id="emoji-13">&#127928;</button>
+                <button class="emoji" id="emoji-14">&#127917;</button>
+                <button class="emoji" id="emoji-15">&#127916;</button>
+                <button class="emoji" id="emoji-16">&#127912;</button>
+                <button class="emoji" id="emoji-17">&#127897;</button>
+                <button class="emoji" id="emoji-18">&#127936;</button>
+                <button class="emoji" id="emoji-19">&#127867;</button>
+                <button class="emoji" id="emoji-20">&#127829;</button>
+                <button class="emoji" id="emoji-21">&#127752;</button>
+                <button class="emoji" id="emoji-22">&#127747;</button><br>
+                <!-- <input type="range" min="1" max="100" value="50" class="slider"> -->
+                <!-- <input type="range" id="fontSlider" class="slider" min="30" max="80" value="50"> -->
+                <input type="range" id="fontSizeSlider" class="slider" value="50" min="40" max="80">
+   
+                <button id="clearsave" class="clear">clear</button>
+                <button id="clearsave" class="save">save</button>
+                <button id="viewGalleryBtn">Gallery</button>
+
+            </div>
+            <div id="webcam-container">
+                <!-- <canvas id="canvas-1"></canvas> -->
+                <div>
+                    <canvas id="canvas">
+                    <div id="emojibrush">&#129346;</div>
+                    </canvas>
+                </div>
+                <div>
+                    <video id="video" autoplay></video>
+                </div>
+            </div>
+            <div></div>
+        </div>
+
+        <div id="gallery">
+            <!-- <button id="viewDrawBtn">Draw</button> -->
+        </div>
+        <button id="viewDrawBtn">Draw</button>
+
+        <div class="nav">
+            <!-- <div class="clr" data-clr="#000"></div>
+            <div class="clr" data-clr="#EF626C"></div>
+            <div class="clr" data-clr="#fdec03"></div>
+            <div class="clr" data-clr="#24d102"></div>
+            <div class="clr" data-clr="#fff"></div> -->            
+            
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+        <script src="js/script-8.js" async defer></script>
+    </body>
+</html>
