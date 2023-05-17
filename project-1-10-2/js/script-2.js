@@ -29,10 +29,9 @@ document.addEventListener('mousemove', onMouseMove);
 // SEECONDD
 
 window.addEventListener("mousemove", function(event) {
-  var screenWidth = window.innerWidth;
-
+        
   // Check if the cursor is within the specified range of screen width (500px to 1000px)
-  if (event.clientX <= screenWidth / 2) {
+  if (event.clientX >= 360 && event.clientX <= 720) {
       
       // If the cursor is within the range, change the background color of the element to red
       // robot.style.backgroundColor = "red";
@@ -54,14 +53,9 @@ window.addEventListener("mousemove", function(event) {
 
 
 window.addEventListener("mousemove", function(event) {
-        // Calculate the screen width
-  var screenWidth = window.innerWidth;
-
-  // Calculate the range: 100% of the screen width minus 50%
-  var rangeStart = screenWidth / 2;
-  var rangeEnd = screenWidth;
+        
   // Check if the cursor is within the specified range of screen width (500px to 1000px)
-  if (event.clientX >= rangeStart && event.clientX <= rangeEnd) {
+  if (event.clientX >= 700 && event.clientX <= 1055) {
       
       // If the cursor is within the range, change the background color of the element to red
       human.style.top = "0px";
