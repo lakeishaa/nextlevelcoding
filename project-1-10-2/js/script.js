@@ -34,16 +34,12 @@ window.addEventListener("mousemove", function(event) {
   // Check if the cursor is within the specified range of screen width (500px to 1000px)
   if (event.clientX <= screenWidth / 2) {
       
-      // If the cursor is within the range, change the background color of the element to red
-      // robot.style.backgroundColor = "red";
       robot.style.top = "0px";
       document.getElementById("robot-down").style.display = "none";
       // element.style.animationName = 'rise';
       
   } else {
       
-      // If the cursor is outside the range, change the background color of the element to white
-      // robot.style.top = "800px";
       robot.style.top = "750px";
       document.getElementById("robot-down").style.display = "block";
       // document.getElementById("robot-down").style.rotate = "90deg";
@@ -57,27 +53,23 @@ window.addEventListener("mousemove", function(event) {
         // Calculate the screen width
   var screenWidth = window.innerWidth;
 
-  // Calculate the range: 100% of the screen width minus 50%
   var rangeStart = screenWidth / 2;
   var rangeEnd = screenWidth;
-  // Check if the cursor is within the specified range of screen width (500px to 1000px)
+
   if (event.clientX >= rangeStart && event.clientX <= rangeEnd) {
       
-      // If the cursor is within the range, change the background color of the element to red
       human.style.top = "0px";
       document.getElementById("human-down").style.display = "none";
       // element.style.animationName = 'rise';
       
   } else {
       
-      // If the cursor is outside the range, change the background color of the element to white
       human.style.top = "750px";
       document.getElementById("human-down").style.display = "block";
       // element.style.animationName = '';
   }
 });
 
-// Calculate the initial sizes of border-left, border-right, border-top, and border-bottom
 const canvasWidth = canvas.offsetWidth;
 const windowWidth = window.innerWidth;
 const borderLeftSize = (windowWidth - canvasWidth) / 2;
@@ -88,16 +80,12 @@ const windowHeight = window.innerHeight;
 const borderTopSize = (windowHeight - canvasHeight) / 2;
 const borderBottomSize  = borderTopSize;
 
-
-// Set the initial border styles
 border.style.borderLeft = `${borderLeftSize}px solid white`;
 border.style.borderRight = `${borderRightSize}px solid white`;
 border.style.borderTop = `${borderTopSize + 10}px solid white`;
 border.style.borderBottom = `${borderBottomSize + 100}px solid white`;
 
 
-// Set the height of the border element to 100vh
-// border.style.height = '100vh';
 
 console.log(borderLeftSize);
 console.log(borderRightSize);
