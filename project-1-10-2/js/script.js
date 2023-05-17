@@ -86,7 +86,7 @@ const borderBottomSize  = borderTopSize;
 // Set the initial border styles
 border.style.borderLeft = `${borderLeftSize}px solid white`;
 border.style.borderRight = `${borderRightSize}px solid white`;
-border.style.borderTop = `${borderTopSize}px solid white`;
+border.style.borderTop = `${borderTopSize + 10}px solid white`;
 border.style.borderBottom = `${borderBottomSize + 100}px solid white`;
 
 
